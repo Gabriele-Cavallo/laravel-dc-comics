@@ -23,6 +23,9 @@ img{
     height: 300px;
     object-fit: cover;
 }
+img.logo{
+    height: 150px;
+}
 .col{
     display: flex;
     flex-wrap: wrap;

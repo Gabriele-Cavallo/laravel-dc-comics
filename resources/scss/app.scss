@@ -1,1 +1,54 @@
+@use './partials/variables' as *;
 @import '~bootstrap/scss/bootstrap';
+
+header,
+footer{
+    height: 20vh;
+    background-color: $secondary-color;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+main{
+    height: 60vh;
+    overflow-y: auto;
+    background-color: $main-color;
+    background-image: url('../img/dc-logo-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.col{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-comics{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 20vh;
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        li{
+            list-style: none;
+            a{
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.card{
+    background-color: $primary-color;
+    color: white;
+    width: calc((100% / 5) - 20px);
+    margin: 20px 10px;
+}

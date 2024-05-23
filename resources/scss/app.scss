@@ -30,6 +30,9 @@ img.logo{
     display: flex;
     flex-wrap: wrap;
 }
+.col.show{
+    justify-content: center;
+}
 .container-comics{
     width: 80%;
     margin: 0 auto;

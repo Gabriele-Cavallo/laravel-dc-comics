@@ -59,3 +59,11 @@ form{
     width: calc((100% / 5) - 20px);
     margin: 20px 10px;
 }
+.btn-dc{
+    background-color: $secondary-color;
+    color: $primary-color;
+    font-weight: bold;
+}
+.card-body *{
+    margin-bottom: 10px;
+}

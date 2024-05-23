@@ -12,7 +12,7 @@
                         <div class="card-text">Serie: {{ $comic->series }}</div>
                         <div class="card-text">Data di pubblicazione: {{ $comic->sale_date }}</div>
                         <div class="card-text">Tipo: {{ $comic->type }}</div>
-                        {{-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
+                        <a href="{{ route('comics.show', ['comic' => $comic->id]) }}" class="btn btn-dc">Go somewhere</a>
                     </div>
                 </div>
             @endforeach

@@ -21,8 +21,8 @@
               <input type="text" class="form-control" id="series" name="series" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
-              <label for="sale_date" class="form-label">Data di pubblicazione</label>
-              <input type="text" class="form-control" id="sale_date" name="sale_date" aria-describedby="emailHelp">
+              <label for="sale_date" class="form-label">Data di vendita</label>
+              <input type="date" class="form-control" id="sale_date" name="sale_date" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
               <label for="type" class="form-label">Tipo</label>
@@ -33,7 +33,7 @@
                 <textarea class="form-control" id="description" rows="7" name="description"></textarea>
             </div>
             
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">ADD</button>
         </form>
     </div>
 @endsection

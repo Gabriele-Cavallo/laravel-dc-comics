@@ -78,3 +78,6 @@ form{
 .card-body *{
     margin-bottom: 10px;
 }
+input[type=number] {
+    appearance: textfield;
+  }

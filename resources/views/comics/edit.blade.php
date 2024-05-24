@@ -27,7 +27,11 @@
             </div>
             <div class="mb-3">
               <label for="type" class="form-label">Tipo</label>
-              <input type="text" class="form-control" id="type" name="type" aria-describedby="emailHelp" value="{{ $comic->type }}">
+              <select class="form-select" id="type" name="type">
+                <option>Scegli un'opzione</option>
+                <option {{ $comic->type === 'comic book' ? 'selected' : ''}} value="comic book">Comic book</option>
+                <option {{ $comic->type === 'graphic novel' ? 'selected' : ''}} value="graphic novel">Graphic novel</option>
+              </select>
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">Descrizione</label>

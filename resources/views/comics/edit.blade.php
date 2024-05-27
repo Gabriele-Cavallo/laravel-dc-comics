@@ -28,9 +28,9 @@
             <div class="mb-3">
               <label for="type" class="form-label">Tipo</label>
               <select class="form-select" id="type" name="type">
-                <option>Scegli un'opzione</option>
-                <option {{ $comic->type === 'comic book' ? 'selected' : ''}} value="comic book">Comic book</option>
-                <option {{ $comic->type === 'graphic novel' ? 'selected' : ''}} value="graphic novel">Graphic novel</option>
+                <option value="">Scegli un'opzione</option>
+                <option @selected($comic->type === 'comic book') value="comic book">Comic book</option>
+                <option @selected($comic->type === 'graphic novel') value="graphic novel">Graphic novel</option>
               </select>
             </div>
             <div class="mb-3">
